@@ -1,17 +1,5 @@
-import Vue from 'vue'
-import App from './App.vue'
-
-import store from './store'
 import jsonp from 'jsonp'
-
-Vue.config.productionTip = false
-
-new Vue({
-  store,
-  render: h => h(App)
-}).$mount('#app')
-
-var geteData=function(){
+export function geteData(){
   
   return new Promise((resove,reject) => {
     jsonp(
@@ -21,9 +9,5 @@ var geteData=function(){
       })
   })
 
-
-  
 }
-geteData().then(res => {
-  console.log(res);
-});
+
