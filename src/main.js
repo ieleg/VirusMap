@@ -11,19 +11,19 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-var geteData=function(){
+// var geteData=function(){
   
-  return new Promise((resove,reject) => {
-    jsonp(
-      'http://interface.sina.cn/news/wap/fymap2020_data.d.json?_=1580892522427', {}, (err, data) => {
-        if(err) reject(err);
-        else resove(data);
-      })
-  })
+//   return new Promise((resove,reject) => {
+//     jsonp(
+//       'http://interface.sina.cn/news/wap/fymap2020_data.d.json?_=1580892522427', {}, (err, data) => {
+//         if(err) reject(err);
+//         else resove(data);
+//       })
+//   })
 
 
   
-}
-geteData().then(res => {
-  console.log(res);
-});
+// }
+// geteData().then(res => {
+//   console.log(res);
+// });
