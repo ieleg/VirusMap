@@ -81,8 +81,8 @@ export default{
     left: '3%',
     right: '4%',
     bottom: '3%',
-    height: '60%',
-    width: '80%',
+    height: '80%',
+    width: '100%',
     containLabel: true
 },
 }

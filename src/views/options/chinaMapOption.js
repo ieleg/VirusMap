@@ -25,6 +25,7 @@ export default{
     }
   },
   series: [{
+    name: '累计感染',
     type: 'map',
     map:  'china',  //直接引入js的方式
     label: {
